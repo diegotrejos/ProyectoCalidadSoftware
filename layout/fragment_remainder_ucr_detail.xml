@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.contacts.ContactosDetalleFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/espaciado"
+            android:layout_marginEnd="@dimen/espaciado"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaciado"
+                android:layout_marginBottom="@dimen/espaciado"
+                android:fontFamily="@string/fuente"
+                android:text="Recordatorio"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/contenido" />
+
+            <TextView
+                android:id="@+id/textNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/espaciado"
+                android:fontFamily="@string/fuente"
+                android:textColor="@color/black"
+                android:textSize="@dimen/contenido" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/espaciado"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/espaciado"
+                android:fontFamily="@string/fuente"
+                android:text="Detalles"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/contenido" />
+
+            <TextView
+                android:id="@+id/textDetalles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/espaciado"
+                android:fontFamily="@string/fuente"
+                android:textColor="@color/black"
+                android:textSize="@dimen/contenido" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/espaciado"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/espaciado"
+                android:fontFamily="@string/fuente"
+                android:text="Fecha"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/contenido" />
+
+            <TextView
+                android:id="@+id/textFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/espaciado"
+                android:fontFamily="@string/fuente"
+                android:textColor="@color/black"
+                android:textSize="@dimen/contenido" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/espaciado"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/espaciado"
+                android:fontFamily="@string/fuente"
+                android:text="Hora"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/contenido" />
+
+            <TextView
+                android:id="@+id/textHora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/espaciado"
+                android:fontFamily="@string/fuente"
+                android:textColor="@color/black"
+                android:textSize="@dimen/contenido" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/espaciado"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_marginBottom="@dimen/espaciado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button"
+                    android:text="Agregar" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

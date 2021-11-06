@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/espaciado"
+                android:layout_marginEnd="@dimen/espaciado"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="@dimen/espaciado"
+                    android:layout_marginBottom="@dimen/espaciado"
+                    android:contentDescription="@string/home_logo_descripcion"
+                    app:srcCompat="@drawable/ucrlogo" />
+
+                <TextView
+                    android:id="@+id/welcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/espaciado"
+                    android:fontFamily="@string/fuente"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/titulo"
+                    tools:text="Bienvenido" />
+
+                <Button
+                    android:id="@+id/PerfilButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="@dimen/espaciado"
+                    android:background="@drawable/button"
+                    android:text="@string/home_perfil"
+                    android:textSize="@dimen/contenido" />
+
+                <Button
+                    android:id="@+id/HorarioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="@dimen/espaciado"
+                    android:background="@drawable/button"
+                    android:text="@string/home_horario"
+                    android:textSize="@dimen/contenido" />
+
+                <Button
+                    android:id="@+id/UbicarClaseButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="@dimen/espaciado"
+                    android:background="@drawable/button"
+                    android:text="@string/home_curso"
+                    android:textSize="@dimen/contenido" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!--se incluye el navigation menu que es el drawer-->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

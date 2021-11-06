@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <item
+        android:id="@+id/Home_drawer"
+        android:icon="@drawable/ic_home"
+        android:title="@string/HomeDrawer" />
+
+    <item
+        android:id="@+id/mi_perfil_drawer"
+        android:icon="@drawable/ic_user"
+        android:title="@string/PerfilDrawer" />
+
+    <item
+        android:id="@+id/horario_drawer"
+        android:icon="@drawable/ic_calendar"
+        android:title="@string/HorarioDrawer"
+        android:visibility="invisible"/>
+
+    <item
+        android:id="@+id/buscar_aula_drawer"
+        android:icon="@drawable/ic_maps"
+        android:title="@string/UbicarClaseDrawer"
+        android:visibility="invisible"/>
+
+    <item
+        android:id="@+id/contactos_ucr_drawer"
+        android:icon="@drawable/ic_contacts"
+        android:title="@string/ContactosDrawer" />
+
+<!--
+Story:MV2021-133 Observar todos los recordatorios institucionales
+Subtask: MV2021A3-143 Crear icono en el drawer para esta vista
+Desarolladores:
+Diego Trejos(D), Dennis Solano(N)
+-->
+    <item
+        android:id="@+id/fechas_importantes_drawer"
+        android:icon="@drawable/ic_fechas_importantes"
+        android:title="@string/FechasImportantesDrawer"/>
+
+    <item
+        android:id="@+id/fechas_importantesUCR_drawer"
+        android:icon="@drawable/ic_fechasimportantesucr"
+        android:title="@string/FechasImportantesUCRDrawer"/>
+    <item
+        android:id="@+id/cerrar_sesion_drawer"
+        android:icon="@drawable/ic_log_out"
+        android:title="@string/CerrarSesion" />
+
+
+
+</menu>
